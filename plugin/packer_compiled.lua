@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Kouki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\FixCursorHold.nvim",
     url = "https://github.com/antoinemadec/FixCursorHold.nvim"
   },
-  LuaSnip = {
-    loaded = true,
-    path = "C:\\Users\\Kouki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
-    url = "https://github.com/L3MON4D3/LuaSnip"
-  },
   ["NeoZoom.lua"] = {
     loaded = true,
     path = "C:\\Users\\Kouki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\NeoZoom.lua",
@@ -118,11 +113,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Kouki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-cmdline",
     url = "https://github.com/hrsh7th/cmp-cmdline"
-  },
-  ["cmp-emoji"] = {
-    loaded = true,
-    path = "C:\\Users\\Kouki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-emoji",
-    url = "https://github.com/hrsh7th/cmp-emoji"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
@@ -158,11 +148,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Kouki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\darkplus.nvim",
     url = "https://github.com/lunarvim/darkplus.nvim"
-  },
-  ["friendly-snippets"] = {
-    loaded = true,
-    path = "C:\\Users\\Kouki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
-    url = "https://github.com/rafamadriz/friendly-snippets"
   },
   ["git-blame.nvim"] = {
     loaded = true,
@@ -231,11 +216,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Kouki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neoscroll.nvim",
     url = "https://github.com/karb94/neoscroll.nvim"
   },
-  neovim = {
-    loaded = true,
-    path = "C:\\Users\\Kouki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neovim",
-    url = "https://github.com/rose-pine/neovim"
-  },
   ["nightfox.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Kouki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nightfox.nvim",
@@ -245,11 +225,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Kouki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nlsp-settings.nvim",
     url = "https://github.com/tamago324/nlsp-settings.nvim"
-  },
-  ["nord.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Kouki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nord.nvim",
-    url = "https://github.com/shaunsingh/nord.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -433,11 +408,6 @@ _G.packer_plugins = {
     only_cond = false,
     path = "C:\\Users\\Kouki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
-  },
-  vim = {
-    loaded = true,
-    path = "C:\\Users\\Kouki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim",
-    url = "https://github.com/dracula/vim"
   },
   ["vim-bbye"] = {
     loaded = true,

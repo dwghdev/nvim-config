@@ -27,11 +27,6 @@ local setup = {
   -- to enable all native operators, set the preset / operators plugin above
   -- operators = { gc = "Comments" },
   key_labels = {
-    -- override the label used to display some keys. It doesn't effect WK in any other way.
-    -- For example:
-    -- ["<space>"] = "SPC",
-    -- ["<cr>"] = "RET",
-    -- ["<tab>"] = "TAB",
   },
   icons = {
     breadcrumb = "»", -- symbol used in the command line area that shows your active key combo
@@ -106,9 +101,7 @@ local mappings = {
   ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
   ["b"] = { "<cmd>Telescope buffers<cr>", "Buffers", },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-  -- ["w"] = { "<cmd>w!<CR>", "Save" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No HL" },
-  -- ["q"] = { "<cmd>q!<CR>", "Quit" },
   ["/"] = { "<cmd>lua require(\"Comment.api\").toggle_current_linewise()<CR>", "Comment" },
   ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
   ["f"] = { "<cmd>Telescope fd<cr>", "Find files", },
@@ -118,7 +111,6 @@ local mappings = {
   },
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
   ["R"] = { '<cmd>lua require("renamer").rename()<cr>', "Rename" },
-  ["z"] = { "<cmd>ZenMode<cr>", "Zen" },
   ["gy"] = "Link",
 
   p = {

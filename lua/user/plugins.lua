@@ -67,7 +67,6 @@ return packer.startup(function(use)
   use 'ThePrimeagen/harpoon'
   use 'lunarvim/vim-solidity'
   use 'Mephistophiles/surround.nvim'
-  use 'rcarriga/nvim-notify'
   use 'tversteeg/registers.nvim'
 
   -- use "metakirby5/codi.vim"
@@ -80,28 +79,20 @@ return packer.startup(function(use)
   }
 
   -- Colorschemes
+  use 'lunarvim/colorschemes'
   use 'folke/tokyonight.nvim'
-  use 'lunarvim/colorschemes' -- A bunch of colorschemes you can try out
   use 'lunarvim/darkplus.nvim'
-  use 'rose-pine/neovim'
   use 'rebelot/kanagawa.nvim'
   use 'EdenEast/nightfox.nvim'
-  use 'dracula/vim'
-  use 'shaunsingh/nord.nvim'
 
   -- cmp plugins
-  use { "hrsh7th/nvim-cmp", commit = "d93104244c3834fbd8f3dd01da9729920e0b5fe7" } -- The completion plugin
-  use "hrsh7th/cmp-buffer" -- buffer completions
-  use "hrsh7th/cmp-path" -- path completions
-  use "hrsh7th/cmp-cmdline" -- cmdline completions
-  use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  use { "hrsh7th/nvim-cmp", commit = "d93104244c3834fbd8f3dd01da9729920e0b5fe7" } 
+  use "hrsh7th/cmp-buffer" 
+  use "hrsh7th/cmp-path"
+  use "hrsh7th/cmp-cmdline"
+  use "saadparwaiz1/cmp_luasnip" 
   use "hrsh7th/cmp-nvim-lsp"
-  use "hrsh7th/cmp-emoji"
   use "hrsh7th/cmp-nvim-lua"
-
-  -- snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
@@ -146,8 +137,7 @@ return packer.startup(function(use)
   use "rcarriga/nvim-dap-ui"
   use "Pocco81/DAPInstall.nvim"
 
-  -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end

@@ -1,20 +1,16 @@
--- following options are the default
--- each of these are documented in `:help nvim-tree.OPTION_NAME`
 vim.g.nvim_tree_icons = {
-  default = "",
+  default = "📄",
   symlink = "",
   git = {
     unstaged = "",
-    staged = "S",
-    unmerged = "",
+    staged = "s",
+    unmerged = "m",
     renamed = "➜",
-    deleted = "",
-    untracked = "U",
+    deleted = "-",
+    untracked = "u",
     ignored = "◌",
   },
   folder = {
-    -- arrow_open = " ",
-    -- arrow_closed = "",
     default = "",
     open = "",
     empty = "",
@@ -52,18 +48,13 @@ nvim_tree.setup {
     enable = true,
     auto_open = true,
   },
---   error
---   info
---   question
---   warning
---   lightbulb
   diagnostics = {
     enable = true,
     icons = {
-      hint = "",
-      info = "",
-      warning = "",
-      error = "",
+      hint = "💡",
+      info = "💬",
+      warning = "☢️",
+      error = "⛔",
     },
   },
   update_focused_file = {
@@ -85,7 +76,7 @@ nvim_tree.setup {
     timeout = 500,
   },
   view = {
-    width = 25,
+    width = 23,
     height = 30,
     hide_root_folder = false,
     side = "left",
@@ -94,8 +85,8 @@ nvim_tree.setup {
       custom_only = false,
       list = {
         { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" },
-        { key = "h", cb = tree_cb "close_node" },
         { key = "v", cb = tree_cb "vsplit" },
+        { key = "s", cb = tree_cb "split" },
       },
     },
     number = false,

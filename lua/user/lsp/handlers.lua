@@ -3,7 +3,6 @@ local M = {}
 M.setup = function()
   local icons = require "user.icons"
   local signs = {
-
     { name = "DiagnosticSignError", text = icons.diagnostics.Error },
     { name = "DiagnosticSignWarn", text = icons.diagnostics.Warning },
     { name = "DiagnosticSignHint", text = icons.diagnostics.Hint },
@@ -15,12 +14,8 @@ M.setup = function()
   end
 
   local config = {
-    -- disable virtual text
     virtual_text = false,
-    -- show signs
-    signs = {
-      active = signs,
-    },
+    signs = { active = signs, },
     update_in_insert = true,
     underline = true,
     severity_sort = true,
@@ -73,13 +68,7 @@ local function lsp_keymaps(bufnr)
   vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
 end
 
--- local notify_status_ok, notify = pcall(require, "notify")
--- if not notify_status_ok then
---   return
--- end
-
 M.on_attach = function(client, bufnr)
-  -- notify(client.name)
   if client.name == "tsserver" or client.name == "html" then
     client.resolved_capabilities.document_formatting = false
   end
